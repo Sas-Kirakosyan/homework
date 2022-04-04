@@ -79,7 +79,7 @@ function checkArmstrongNumber (val) {
     }
 }
 
-checkArmstrongNumber(371)
+console.log(checkArmstrongNumber(371))
 
 
 //  6) Given a positive number. Print it in reverse order.
