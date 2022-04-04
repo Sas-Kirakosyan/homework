@@ -43,31 +43,21 @@ console.log( beteweenNumbers(0,47) )
 function twoEwensDashed (val) {
     let valStr = val.toString().split('')
     let newValStr = ''
-    let x = 0;
 
-        valStr.forEach((val) =>{
-
-        if(+val %2 === 0){
-            x +=1
-
-            if(x === 2) {
-                newValStr += `-${val}`
-                x -= 1
-            }else{
-                newValStr += val
-            }
-
+    valStr.forEach((val, i)=>{
+        if( val%2 === 0 && valStr[i+1] %2 ===0 ){
+            newValStr += `${val}-`
         }else{
             newValStr += val
-            x=0
         }
     })
 
     return newValStr
+    
 
 }
 
-console.log( twoEwensDashed(222) )
+console.log( twoEwensDashed(234408114566) )
 
 
 
