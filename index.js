@@ -60,5 +60,28 @@ function twoEwensDashed (val) {
 console.log( twoEwensDashed(234408114566) )
 
 
+/*  5) An Armstrong number is a 3 digit number for which sum of cube of its digits is equal
+to the number itself. Write a program to check whether the given number is an
+Armstrong number.  */
+
+function checkArmstrongNumber (val) {
+    let valStr = `${val}`
+    let count = 0
+    
+    for(let i = 0; i<valStr.length; i++){
+        count += Math.pow(valStr[i], valStr.length) 
+    }
+
+    if(count === val){
+        console.log('yes')
+    }else{
+        console.log('no')
+    }
+}
+
+checkArmstrongNumber(371)
+
+
+//  6) Given a positive number. Print it in reverse order.
 
 
