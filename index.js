@@ -2,6 +2,7 @@
     
 function digitsCount (val) {
 
+    //TODO you don't need to split
     let num = val.toString().split('').length
     return val<0 ? num-1 : num
     
@@ -12,7 +13,7 @@ console.log(digitsCount(-75694))
 // 2) Count numbers of digit 9 in a number
 
 function digit9 (val) {
-
+//TODO write it using one loop, you are using 2 loops
     let splitArr = val.toString().split('') 
     return splitArr.filter((val)=> val === '9').length
     
