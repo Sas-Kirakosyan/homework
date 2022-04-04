@@ -84,4 +84,26 @@ checkArmstrongNumber(371)
 
 //  6) Given a positive number. Print it in reverse order.
 
+function reverseNumber (val) {
+    let strNum = val.toString().split('')
+    let newNumber = ''
+    let chekMinus = 0
+    if(strNum[0] === '-'){
+        newNumber += '-'
+        chekMinus =1
+    }
+
+    for(let i = strNum.length-1; i>=chekMinus; i--){
+        newNumber += strNum[i]
+    }
+
+    return newNumber
+}
+
+console.log(reverseNumber(-156))
+
+
+
+
+
 
