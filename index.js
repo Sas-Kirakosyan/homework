@@ -1,7 +1,7 @@
 //  1)Given a number print its digits count.  
     
 function digitsCount (val) {
-
+//you dont need split, 
     let num = val.toString().split('').length
     return val<0 ? num-1 : num
     
